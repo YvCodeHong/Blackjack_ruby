@@ -14,4 +14,12 @@ class Card
     @rank = "UNKNOWN"
   end
 end
+
+  def to_s
+    if show
+      "#{rank} of #{suit}"
+    else
+      ""
+    end
+  end
 end
